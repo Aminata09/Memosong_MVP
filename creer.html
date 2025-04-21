@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Créer une chanson - MemoSong</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Créer une chanson</h1>
+    <a href="index.html">🏠 Retour à l'accueil</a>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <label for="cours">Colle ton cours :</label>
+      <textarea id="cours" rows="6" placeholder="Ex : La révolution française commence en 1789..."></textarea>
+
+      <label for="style">Choisis un style musical :</label>
+      <select id="style">
+        <option>🎤 Rap</option>
+        <option>🎶 Pop</option>
+        <option>🎸 Acoustique</option>
+        <option>🌙 Lo-fi</option>
+      </select>
+
+      <label for="voix">Choisis une voix :</label>
+      <select id="voix">
+        <option>👧 Voix féminine douce</option>
+        <option>👨 Voix masculine grave</option>
+        <option>🤖 Voix robotique</option>
+        <option>🧒 Voix jeune et dynamique</option>
+      </select>
+
+      <button onclick="genererChanson()">🎧 Générer ma chanson</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MemoSong</p>
+  </footer>
+</body>
+</html>
